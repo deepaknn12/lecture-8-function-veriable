@@ -1,0 +1,17 @@
+    public static boolean checkMember(int n) {
+        int a = 0;
+        int b = 1;
+        if (n == 0) {
+            return true;
+        }
+        while ((a + b) <= n) {
+            int c = a + b;
+            a = b;
+            b = c;
+            if (n == c) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
